@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!--  beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" -->
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"   
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+      
+<!--   bean id ="mathCheatObjectValue" class="com.cdi.MathCheat"></bean-->
+
+<!-- bean id="stu" class = "com.cdi.Student">
+	<property name="id" value="1001"></property>
+	<property name="mathCheat" ref="mathCheatObjectValue" /-->
+	<!--  bean class="com.cdi.MathCheat"></bean -->
+	<!-- /property -->
+<!--/bean-->
+
+<!--bean id="anotherStudent" class="com.cdi.AnotherStudent">
+	<property name="cheat" ref="mathCheatObjectValue" / -->
+	<!--   bean class="com.cdi.MathCheat"></bean -->
+	<!-- /property -->
+<!--/bean-->
+<context:annotation-config/>
+
+<!--bean id ="heartObjectValue" class="spring_autowire_qaulifier.Heart"></bean-->
+<!-- bean id ="humanHeart" class="spring_autowire_qaulifier.Heart">
+<property name="namOfAnimal" value="Human"/>
+<property name="noOfHeart" value="1"/>
+</bean -->
+
+<bean id ="RequestInterceptor" class="com.exxample.demo.interceptor.RequestInterceptor">
+<!--property name="namOfAnimal" value="Octopus"/-->
+<!--property name="noOfHeart" value="3"/-->
+</bean>
+
+<!--   bean id ="SecurityConfig" class="com.example.demo.config.SecurityConfig">
+</bean -->
+
+
+</beans>
+   
